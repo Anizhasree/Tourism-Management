@@ -1,0 +1,38 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+body{
+}
+form {
+  overflow: hidden;
+}
+
+label {
+  float: left;
+  width: 200px;
+  padding-right: 24px;
+}
+
+input {
+  float: left;
+  width: calc(30% - 100px);
+}
+
+button {
+  float: right;
+  width: calc(100% - 200px);
+}
+
+a {
+  color: #00B7FF;
+}
+h1{
+  text-align: center;
+  color: red;
+}
+
+h3{
+  text-align:center;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      <link rel="stylesheet" text="text/css" href="./stylesheets/style.css">
+    
+      <title>TOURISM</title>
+      <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  </head>
+
+
+  <body>
+    <!-- Tourist Registration -->
+    <form action="addTourist" method="POST">
+      <i class="fas fa-align-center "><b><u>TOURIST KYC REGISTRATION</u></b></i><br><br>
+      <label for="Register Number" class="Register Number"><b>Register Number :</b></label>
+      <input name="Register" placeholder="Enter your Reg. No"/>
+        <br>
+        <br>
+        <label for="Name" class="Name"><b>Name :</b></label>
+        <input name="Name" placeholder="Enter your Name"/>
+      <br>
+      <br>
+      <label for="Age" class="Age"><b>Age :</b></label>
+      <input name="Age" placeholder="Enter your Age"/>
+      <br>
+      <br>
+      <label for="Indian" class="India"><b>Indian :</b></label>
+      <select name="Indian" placeholder="Indian or Not"/>
+               <option value ="nil">Choose ...</option>
+               <option value ="0">YES</option>
+               <option value ="1">NO</option>
+    </select>
+      <br>
+      <br>
+      <label for="Nationality" class="Nationality"><b>Nationality :</b></label>
+      <input name="Nationality" placeholder="Enter your Nation"/>
+      <br>
+      <br>
+      <label for="Gender" class="Gender"><b>Gender :</b></label>
+      <select name="Gender" placeholder="Choose your Gender"/>
+               <option value ="nil">Choose ...</option>
+               <option value ="0">Male</option>
+               <option value ="1">Female</option>
+               <option value ="2">Other</option>
+    </select>
+    <br>
+    <br>
+    <label for="Blood Group" class="Blood Group"><b>Blood Group :</b></label>
+    <select type="text" name="Blood" placeholder="Choose your Gender"/>
+               <option value ="nil">Choose ...</option>
+               <option value ="A+">A+</option>
+               <option value ="A-">A-</option>
+               <option value ="B+">B+</option>
+               <option value ="B-">B-</option>
+               <option value ="AB+">AB+</option>
+               <option value ="AB-">AB-</option>
+               <option value ="O+">O+</option>
+               <option value ="O-">O-</option>
+    </select>
+    <br>
+    <br>
+    <label for="Passport Number" class="Passport Number"><b>Passport Number :</b></label>
+    <input name="Passport_Number" placeholder="Enter your Passport Number"/>
+    <br>
+    <br>
+
+    <label for="Buy Token" class="Buy Token"><b>Buy Token :</b></label>
+    <input name="Token" placeholder="Enter token amount"/>
+    
+    <br>
+    <br>
+    <label for="Tourist Address" class="Tourist Address"><b>Tourist Address :</b></label>
+    <input name="Tour_Add" placeholder="Enter Address"/>
+    <br>
+    <br>
+    <label for="Submit" class="Submit"></label>
+      <input type ="submit" value="SUBMIT"/>
+    </form> 
+    <br>
+    <br>
+
+
+
+    <!-- Product Registration -->
+    <form action="addProductt" method="POST">
+      <i class="fas fa-align-center "><b><u>PRODUCT REGISTRATION</u></b></i><br><br>
+      <label for="Product ID" class="Product ID"><b>Product ID :</b></label>
+      <input name="ProductID" placeholder="Enter Product ID"/>
+        <br>
+        <br>
+        <label for="Product Name" class="Product Name"><b>Product Name :</b></label>
+        <input name="Product_Name" placeholder="Enter Product Name"/>
+      <br>
+      <br>
+      <label for="Cost" class="Cost"><b>Cost(in tokens) :</b></label>
+      <input name="Cost" placeholder="Enter Cost"/>
+      <br>
+      <br>
+      <label for="Total Quantity" class="Total Quantity"><b>Total Quantity :</b></label>
+      <input name="Quantity" placeholder="Enter Net Quantity"/>
+      <br>
+      <br>
+      <label for="Seller Address" class="Seller Address"><b>Seller Address :</b></label>
+      <input name="Seller_Addr" placeholder="Enter Seller Address"/>
+      <br>
+      <br>
+      <label for="Submit" class="Submit"></label>
+      <input type ="submit" value="SUBMIT"/>
+    </form> 
+    <br>
+    <br>
+
+
+    <!-- Get Tourist Details -->
+    <form action="getTourist" method="GET">
+        <i class="fas fa-align-center "><b><u>Get Tourist Details</u></b></i><br><br>
+        <label for="Register Number" class="Register Number"><b>Register Number :</b></label>
+        <input name="Register" placeholder="Enter Reg."/>
+        <br><br>
+        <label for="submit" class="submit"></label>
+        <input type ="submit" value="SUBMIT"/>
+    </form> 
+    <br>
+    <br>
+
+
+    <!-- Get Product Details -->
+    <form action="getProduct" method="GET">
+        <i class="fas fa-align-center "><b><u>Get Product Details</u></b></i><br><br>
+        <label for="Product ID" class="Product ID"><b>Product ID :</b></label>
+        <input name="ProductID" placeholder="Enter Prt Id."/>
+        <br><br>
+        <label for="submit" class="submit"></label>
+        <input type ="submit" value="SUBMIT"/>
+    </form> 
+    <br>
+    <br>
+
+    
+    <!-- Top up Token by Tourist only -->
+    <form action="addTokens" method="POST">
+        <i class="fas fa-align-center "><b><u>Top up Token </u></b></i><br><br>
+        <label for="Register Number" class="Register Number"><b>Tourist ID :</b></label>
+        <input name="Reg" placeholder="Register Number"/>
+        <br><br>
+        <label for="Tourist Address" class="Tourist Address"><b>Tourist Address :</b></label>
+        <input name="Tour_Add1" placeholder="Enter Address"/>
+        <br>
+        <br>
+        <label for="Topup Amount" class="Topup Amount"><b>Topup Amount :</b></label>
+        <input name="Topup_Amount" placeholder="Topup Amount"/>
+        <br><br>
+        <label for="Submit" class="submit"></label>
+        <input type ="submit" value="SUBMIT"/>
+    </form> 
+
+    <!-- Buy Product from Seller -->
+    <form action="buyProduct" method="POST">
+      <i class="fas fa-align-center "><b><u>Buy Product</u></b></i><br><br>
+      <label for="Register Number" class="Register Number"><b>Tourist ID :</b></label>
+      <input name="TourReg" placeholder="Register Number"/>
+      <br><br>
+      <label for="Tourist Address" class="Tourist Address"><b>Tourist Address :</b></label>
+      <input name="Tour_Add2" placeholder="Enter Address"/>
+      <br><br>
+      <label for="Register Number" class="Register Number"><b>Product ID :</b></label>
+      <input name="ProductId" placeholder="Register Number"/>
+      <br><br>
+      <label for="Quantity" class="Quantity"><b>Quantity :</b></label>
+      <input name="Quantity" placeholder="Enter Quantity"/>
+      <br>
+      <br>
+      <label for="Submit" class="submit"></label>
+      <input type ="submit" value="SUBMIT"/>
+  </form> 
+
+  
+  </body>
+</html>
